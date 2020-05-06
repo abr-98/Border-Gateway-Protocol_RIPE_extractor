@@ -12,8 +12,11 @@ Extract into home folder
 Setup the c executables using
 
 cd /bgpdump-master
+
 sh ./bootstrap.sh
+
 make
+
 ./bgpdump -T
 
 Replace the user name in the /bgpdump-master/bgp_lister.py
@@ -23,6 +26,7 @@ Place the required source in the BGP_Data(as shown in the folder)
 Instruction to execute:
 
 cd /bgpdump-master
+
 python3 BGP_lister.py
 
 It will produce results in the BGP_details folders
