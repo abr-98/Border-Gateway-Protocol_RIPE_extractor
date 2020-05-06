@@ -1,0 +1,23 @@
+Union:
+
+
+1: Training:loss: 1.5439e-04 - accuracy: 1.0000 - dice_coef: 0.9795 - precision: 0.9800 - sensitivity: 0.9799 - specificity: 1.0000
+
+testing:loss: 0.0062 - accuracy: 0.9988 - dice_coef: 0.9978 - precision: 0.9968 - sensitivity: 0.9997 - specificity: 0.9984
+
+2: Training:loss: 5.6027e-05 - accuracy: 1.0000 - dice_coef: 0.9998 - precision: 0.9999 - sensitivity: 0.9999 - specificity: 1.0000
+
+Testing:loss: 2.9606e-04 - accuracy: 0.9999 - dice_coef: 0.9998 - precision: 0.9999 - sensitivity: 0.9998 - specificity: 1.0000
+
+3: Training:loss: 1.1262e-04 - accuracy: 1.0000 - dice_coef: 0.9999 - precision: 0.9999 - sensitivity: 1.0000 - specificity: 0.9999
+
+Testing:loss: 8.3370e-04 - accuracy: 0.9998 - dice_coef: 0.9995 - precision: 0.9993 - sensitivity: 0.9999 - specificity: 0.9997
+
+4:Training:loss: 1.9493e-04 - accuracy: 1.0000 - dice_coef: 0.9997 - precision: 1.0000 - sensitivity: 0.9994 - specificity: 1.0000
+
+Testing:loss: 3.0818e-04 - accuracy: 1.0000 - dice_coef: 0.9999 - precision: 1.0000 - sensitivity: 0.9999 - specificity: 1.0000
+
+
+5:Traing:loss: 7.2178e-05 - accuracy: 1.0000 - dice_coef: 0.9999 - precision: 1.0000 - sensitivity: 0.9999 - specificity: 1.0000
+
+Testing:loss: 0.0172 - accuracy: 0.9984 - dice_coef: 0.9974 - precision: 0.9952 - sensitivity: 0.9998 - specificity: 0.9978

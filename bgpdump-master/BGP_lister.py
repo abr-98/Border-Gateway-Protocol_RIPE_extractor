@@ -17,30 +17,36 @@ def runProcess(exe):
 
 def list_bgp(fle,dest_fldr,source_fldr):
 	Date=source_fldr[-5:]
-	#print(Date)
+	
 	dict_k={}
 	file=dest_fldr+'/'+Date+'_BGP_records.json'
 	l=[]
-	#ip_list={}
+	
 	cmd='./bgpdump '+source_fldr+'/'+fle
-	#print(cmd)
+	
+	cnt=1
 	for line in runProcess(cmd.split()):
+		
 		l=(line.decode('utf-8')[:-1].split(','))
+		if len(l)==1 and l[0]=="":
+			cnt+=1
+		
 		k=0
-		#print(len(l))
+		
+
 		while k<len(l):
-			#print(l[k])	
+			
+			temp_t=str(cnt)
+		
 			pl=l[k].find(': ')
 			if pl!=-1:
-				#k+=1
-				#continue
+				
 				key=l[k][:pl]
 				value=l[k][pl+2:]
-				#print(value)
-				if key=='TIME':
-					temp_t=value[-8:]
-					#print(value[-8:])
-					dict_k[value[-8:]]={}
+				
+				if key=="TIME":
+					dict_k[temp_t]={}
+					
 				if dict_k.get(temp_t) is not None:
 					dict_k[temp_t][key]=value
 			else:
@@ -72,8 +78,8 @@ def list_bgp(fle,dest_fldr,source_fldr):
 
 def bgp_caller():
 	#os.system('cd bgpdump-master')
-	source_fldr='/home/$user$/Data_BGP'
-	dest_fldr='/home/$user$/Details_BGP'
+	source_fldr='/home/abhijit/Data_BGP'
+	dest_fldr='/home/abhijit/Details_BGP'
 	src_files=os.listdir(source_fldr)
 	for fle in src_files:
 		main_ext=source_fldr+"/"+fle
